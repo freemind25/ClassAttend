@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Caveat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+:root {
+  /* Content layers */
+  --z-content-low: 10; /* Minor elevated content */
+  --z-content: 20; /* Standard elevated content */
+  --z-content-high: 30; /* Important content that needs prominence */
+
+  /* Navigation layers */
+  --z-nav-low: 100; /* Secondary navigation components */
+  --z-nav: 200; /* Primary navigation bars */
+  --z-nav-sticky: 300; /* Sticky navigation elements */
+
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+}
+
+:root {
+  /* Light mode variables */
+  --background: hsl(210, 20%, 98%);
+  --foreground: hsl(222, 47%, 11%);
+
+  --surface: hsl(210, 20%, 96%);
+  --surface-foreground: hsl(222, 47%, 11%);
+  --sidebar: hsl(214, 32%, 91%);
+  --sidebar-foreground: hsl(222, 47%, 11%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 47%, 11%);
+  --popup: hsl(0, 0%, 100%);
+  --popup-foreground: hsl(222, 47%, 11%);
+  --primary: hsl(215, 90%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --accent: hsl(217, 91%, 60%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(210, 20%, 92%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --success: hsl(142, 76%, 36%);
+  --success-foreground: hsl(0, 0%, 100%);
+  --error: hsl(0, 84%, 60%);
+  --error-foreground: hsl(0, 0%, 100%);
+  --warning: hsl(38, 92%, 50%);
+  --warning-foreground: hsl(0, 0%, 100%);
+  --info: hsl(200, 98%, 39%);
+  --info-foreground: hsl(0, 0%, 100%);
+  --info-hover: hsl(200, 98%, 35%);
+  --info-active: hsl(200, 98%, 30%);
+
+  /* Attendance specific colors */
+  --present: hsl(142, 76%, 36%);
+  --absent: hsl(0, 84%, 60%);
+  --late: hsl(38, 92%, 50%);
+  --excused: hsl(200, 98%, 39%);
+
+  --border: hsl(214, 32%, 91%);
+
+  /* Font Families */
+  --font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-heading: 'Nunito', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-monospace: 'JetBrains Mono', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  --font-family-cursive: 'Caveat', cursive;
+
+  /* Border Radius and box shadows */
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-focus: 0 0 0 3px hsla(215, 90%, 50%, 0.3);
+
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px; 
+
+  /* Animation */
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 300ms;
+  --animation-duration-slow: 500ms;
+
+  /* Chart colors */
+  --chart-color-1: hsl(215, 90%, 50%);
+  --chart-color-2: hsl(142, 76%, 36%);
+  --chart-color-3: hsl(0, 84%, 60%);
+  --chart-color-4: hsl(38, 92%, 50%);
+  --chart-color-5: hsl(200, 98%, 39%);
+
+  /* Additional variables */
+  --gradient-primary: linear-gradient(135deg, hsl(215, 90%, 50%), hsl(217, 91%, 60%));
+  --gradient-success: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(160, 84%, 39%));
+  --gradient-error: linear-gradient(135deg, hsl(0, 84%, 60%), hsl(350, 84%, 60%));
+}
+
+.dark {
+  --background: hsl(222, 47%, 11%);
+  --foreground: hsl(210, 40%, 98%);
+
+  --surface: hsl(223, 47%, 14%);
+  --surface-foreground: hsl(210, 40%, 98%);
+  --sidebar: hsl(224, 47%, 16%);
+  --sidebar-foreground: hsl(210, 40%, 98%);
+  --card: hsl(224, 47%, 16%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popup: hsl(224, 47%, 16%);
+  --popup-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(217, 19%, 27%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(215, 90%, 50%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(223, 27%, 20%);
+  --muted-foreground: hsl(215, 16%, 65%);
+  --success: hsl(142, 76%, 45%);
+  --success-foreground: hsl(0, 0%, 100%);
+  --error: hsl(0, 84%, 60%);
+  --error-foreground: hsl(0, 0%, 100%);
+  --warning: hsl(38, 92%, 50%);
+  --warning-foreground: hsl(0, 0%, 100%);
+  --info: hsl(200, 98%, 50%);
+  --info-foreground: hsl(0, 0%, 100%);
+  --info-hover: hsl(200, 98%, 45%);
+  --info-active: hsl(200, 98%, 40%);
+
+  /* Attendance specific colors */
+  --present: hsl(142, 76%, 45%);
+  --absent: hsl(0, 84%, 60%);
+  --late: hsl(38, 92%, 50%);
+  --excused: hsl(200, 98%, 50%);
+
+  --border: hsl(217, 19%, 27%);
+
+  /* Shadow adjustments for dark mode */
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-focus: 0 0 0 3px hsla(217, 91%, 60%, 0.4);
+
+  /* Additional variables */
+  --gradient-primary: linear-gradient(135deg, hsl(215, 90%, 50%), hsl(217, 91%, 60%));
+  --gradient-success: linear-gradient(135deg, hsl(142, 76%, 45%), hsl(160, 84%, 48%));
+  --gradient-error: linear-gradient(135deg, hsl(0, 84%, 60%), hsl(350, 84%, 60%));
+}
